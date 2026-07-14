@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --background: #00151D;
+  --lightbackground: #171717;
+  --neutral600: #33444A;
+  --neutral500: #49616A;
+  --neutral200: #C2C5C2;
+  --neutral100: #FCEFE8;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainCodes {
+
+  padding: 10rem 3rem;
+  color: red;
+}
