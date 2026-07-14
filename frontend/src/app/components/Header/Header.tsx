@@ -23,9 +23,9 @@ const Header = ({ className = "" }: HeaderProps) => {
                 </div>
 
                 <div className="rightMenu">
-                    <button><Link href="/">Home </Link></button>
-                    <button><Link href="/schedule">Schedule </Link></button>
-                    <button><Link href="/speakers">Home </Link></button>
+                    <button><Link href="/">HOME </Link></button>
+                    <button><Link href="/schedule">SCHEDULE</Link></button>
+                    <button><Link href="/speakers">SPEAKERS</Link></button>
 
                 </div>
 

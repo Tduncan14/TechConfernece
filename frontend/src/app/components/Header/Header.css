@@ -1,6 +1,16 @@
+@font-face {
+    font-family: "Chakra Petch";
+    src: url("/assets/fonts/chakra-petch/chakra-petch-semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 .header {
 
     padding: 2rem 3rem;
+    font-family: "Chakra Petch", sans-serif;
 
 
 }

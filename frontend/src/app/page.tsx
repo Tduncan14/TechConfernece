@@ -6,6 +6,21 @@ export default function page() {
 
       <div className="codeMeetSMachine">
 
+        <div className="machine">
+
+          <div className="">
+
+            <h1> where code meets the machine_</h1>
+
+
+          </div>
+
+
+
+        </div>
+
+
+
       </div>
 
       {/* Feature speakers */}
