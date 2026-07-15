@@ -1,0 +1,96 @@
+.homeContainer {
+    padding: 2rem 3rem;
+    color: white;
+}
+
+
+/* upper machine */
+
+
+.codeMeetSMachine {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* this is the end */
+
+.machine {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+
+}
+
+
+/* MachineLeft */
+
+.machineLeft {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    flex: 2;
+    padding: 1rem;
+}
+
+.machineFooter {
+    margin-top: auto;
+}
+
+
+/* this is the right side */
+
+
+.machineRight {
+    background: lightblue;
+    flex: 1.25;
+    padding: 1rem;
+    display: flex;
+}
+
+.machineDates {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* end of machine */
+
+/*  This is the upper area */
+
+.upperSpeaker {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.performancesTrack {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+
+
+.performancesTrack>div {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid white;
+    box-shadow: 3px 3px 0 white;
+
+}
+
+.performancesTrack>div h1 {
+    margin-bottom: .7rem;
+}
+
+.speakerhomeContainer {
+    margin-top: 2rem;
+
+}
+
+
+.headertwo {
+    margin-bottom: 1rem;
+}
