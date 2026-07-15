@@ -2,6 +2,7 @@ import React from 'react'
 import './style.css'
 import Link from 'next/link'
 import Image from 'next/image'
+import SpeakerList from './components/Speakers/Speaker'
 
 export default function page() {
   return (
@@ -124,7 +125,7 @@ export default function page() {
           <h2>// FEATURED_SPEAKERS</h2>
 
           <div className="speakerGallery">
-
+            <SpeakerList />
           </div>
 
         </div>
