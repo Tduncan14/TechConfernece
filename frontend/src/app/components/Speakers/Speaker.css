@@ -3,3 +3,46 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 3.5rem;
 }
+
+.featured-card {
+
+    border: 1px solid rgba(144, 244, 144, 0.3);
+
+
+}
+
+.featured-card:hover {
+    border: 1px solid white;
+    box-shadow: 3px 3px 0 white;
+    cursor: pointer;
+}
+
+
+/*  */
+
+.speaker-info {
+    padding: 1rem;
+}
+
+.speakerButton {
+    padding: 1rem;
+    border: 1px solid white;
+    box-shadow: 3px 3px 0 white;
+    margin-top: 2rem;
+    width: 200px;
+    align-self: center;
+}
+
+
+.speakerButton:hover {
+    background: green;
+    color: black;
+}
+
+.bottomSpeaker {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* the end of the speaker */

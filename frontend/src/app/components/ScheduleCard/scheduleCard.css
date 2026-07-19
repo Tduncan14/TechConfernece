@@ -1,0 +1,34 @@
+.scheduleContent {
+    border: 1px solid;
+}
+
+
+.scheduleCard {
+    display: flex;
+
+}
+
+.titleScheduleWord {
+    padding: .2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    flex: .15;
+    background-color: blue;
+    text-align: center;
+    justify-content: center;
+    align-content: center
+}
+
+.mainScheduleContent {
+    flex: 3;
+    background-color: orange;
+    padding: 1rem;
+}
+
+.scheduleCardDetails {
+    flex: .5;
+    background-color: yellow;
+    padding: 1rem;
+}

@@ -57,7 +57,7 @@
 
 /* end of machine */
 
-/*  This is the upper area */
+/* This is the upper area */
 
 .upperSpeaker {
     display: flex;
@@ -92,5 +92,39 @@
 
 
 .headertwo {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 4.5rem;
+}
+
+/* buttomSPeaker */
+
+/* .bottomSpeaker {
+    margin-top: 4.5rem;
+} */
+
+
+/* for  */
+
+/* the container era */
+
+.scheduleContainerGallery {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.scheduleContainerButton {
+    align-self: center;
+    margin-top: 1.5rem;
+    border: 1px solid white;
+    box-shadow: 3px 3px white;
+    padding: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.scheduleContainerButton:hover {
+    background: lawngreen;
+    color: darkgreen;
+    box-shadow: 3px 3px darkgreen;
 }

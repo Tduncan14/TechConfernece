@@ -3,8 +3,9 @@ import './style.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import SpeakerList from './components/Speakers/Speaker'
+import ScheduleCard from './components/ScheduleCard/ScheduleCard'
 
-export default function page() {
+export default function Page() {
   return (
     <div className="homeContainer">
 
@@ -31,7 +32,6 @@ export default function page() {
               </div>
             </div>
           </div>
-
 
           <div className="machineRight">
 
@@ -61,7 +61,6 @@ export default function page() {
             </div>
 
           </div>
-
 
 
         </div>
@@ -122,12 +121,14 @@ export default function page() {
 
         <div className="bottomSpeaker">
 
-          <h2>// FEATURED_SPEAKERS</h2>
+          <h2 className="headertwo">// FEATURED_SPEAKERS</h2>
 
           <div className="speakerGallery">
             <SpeakerList />
           </div>
 
+
+          <button className="speakerButton"> <Link href="/speakers"> VIEW ALL SPEAKERS </Link></button>
         </div>
 
       </div>
@@ -137,6 +138,22 @@ export default function page() {
       {/* sheduleHighlights */}
 
       <div className="schedulehomeSchedule">
+        <div className="titleSchedule">
+          <h1>// SCHEDULE_HIGHLIGHTS</h1>
+        </div>
+
+        <div className="scheduleContainerGallery">
+          <ScheduleCard />
+          <ScheduleCard />
+          <ScheduleCard />
+          <ScheduleCard />
+
+
+          <button className="scheduleContainerButton"> VIEW FULL SCHEDULE </button>
+
+
+        </div>
+
 
 
       </div>

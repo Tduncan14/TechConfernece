@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    color: lightgray;
+    padding: 2rem 3rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    color: lightgray;
+
+}
+
+
+
+.rightFooter {
+    display: flex;
+    gap: 2rem;
+}
+
+.rightLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftRight {
+    display: flex;
+    flex-direction: column;
+}
