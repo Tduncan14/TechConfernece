@@ -1,11 +1,19 @@
+"use client"
+
+
 import React from 'react'
 import './style.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import SpeakerList from './components/Speakers/Speaker'
 import ScheduleCard from './components/ScheduleCard/ScheduleCard'
+import { usePathname } from 'next/navigation'
 
 export default function Page() {
+
+  const pathName = usePathname()
+
+
   return (
     <div className="homeContainer">
 
@@ -124,7 +132,7 @@ export default function Page() {
           <h2 className="headertwo">// FEATURED_SPEAKERS</h2>
 
           <div className="speakerGallery">
-            <SpeakerList />
+            <SpeakerList pathName={pathName} />
           </div>
 
 

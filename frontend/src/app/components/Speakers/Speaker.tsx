@@ -1,7 +1,9 @@
+"use client"
 import React from 'react'
 import Card from '../Card/Card'
 import './Speaker.css'
 import data from '../../../data.json';
+import { usePathname } from 'next/navigation';
 
 interface Speaker {
     id: string;
@@ -13,13 +15,21 @@ interface Speaker {
     featured: boolean;
 }
 
-const SpeakerList: React.FC = () => {
-    // Filter for featured speakers and slice to limit the view to a max of 8
-    const dataSpeaker = ((data.speakers || []) as Speaker[])
-        .filter((speaker) => speaker.featured === true)
-        .slice(0, 8);
+interface SpeakerListProps {
+    pathName: string;
+}
 
-    // Beautiful background colors to rotate through
+
+
+const SpeakerList: React.FC<SpeakerListProps> = ({ pathName }) => {
+
+
+
+
+    const dataSpeaker = pathName === "/" ? ((data.speakers || []) as Speaker[])
+        .filter((speaker) => speaker.featured === true)
+        .slice(0, 8) : (data.speakers || [])
+
     const avatarBgColors = [
         '#FFE6BA', // DevHorizon Track Orange
         '#B5E9FC', // DevHorizon Track Blue

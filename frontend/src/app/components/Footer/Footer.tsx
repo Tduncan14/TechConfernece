@@ -7,6 +7,7 @@ const Footer = () => {
     return (
         <div className="footer">
 
+            <hr />
 
             <div className="footContainer">
                 <div className="leftFooter">
@@ -45,7 +46,32 @@ const Footer = () => {
 
                     </div>
 
+
+                    <div className="leftRightEnd">
+                        <h1>// VENUE</h1>
+                        <li > Pier 70</li>
+                        <li > San Franciso, CA</li>
+                        <li >Nov 15-17, 2026</li>
+
+
+
+                    </div>
+
+
                 </div>
+            </div>
+
+            <hr />
+
+
+            <div className="bottomFooter">
+                <h1>&copy; 2026 DEVHORIZON. ALL RIGHTS RESERVES </h1>
+
+
+
+
+
+                <button> BACK TO TOP  </button>
             </div>
 
 

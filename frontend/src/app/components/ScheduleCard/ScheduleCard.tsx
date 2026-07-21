@@ -32,9 +32,10 @@ function ScheduleCard({
 
 
             <div className="scheduleCardDetails">
-                <span>NOV 15</span>
-                <span>10:30 AM</span>
-                <span>ROOM A</span>
+                <span>11:00</span>
+                <span>12:00</span>
+                <Image alt="barcode" src="/assets/images/pattern-barcode.svg" height={100} width={100} />
+                <span>DAY 1</span>
             </div>
         </article>
     )

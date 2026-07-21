@@ -29,6 +29,13 @@
 
 .scheduleCardDetails {
     flex: .5;
+    display: flex;
+    color: black;
     background-color: yellow;
+    flex-direction: column;
     padding: 1rem;
+    gap: .3rem;
+    border-left: dashed 3px black;
+    justify-content: center;
+    align-items: center;
 }

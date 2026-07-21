@@ -3,12 +3,15 @@
     flex-direction: column;
     color: lightgray;
     padding: 2rem 3rem;
+    margin-top: 2rem;
 }
 
-.footer {
+.footContainer {
     display: flex;
     justify-content: space-between;
     color: lightgray;
+    margin-top: 1.4rem;
+    margin-bottom: 2.4rem;
 
 }
 
@@ -16,7 +19,7 @@
 
 .rightFooter {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .rightLeft {
@@ -27,4 +30,19 @@
 .leftRight {
     display: flex;
     flex-direction: column;
+}
+
+.leftRightEnd {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+
+
+
+.bottomFooter {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
