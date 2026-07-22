@@ -1,0 +1,19 @@
+.speakerPage {
+    color: white;
+    padding: 2rem 3rem;
+
+}
+
+
+
+.cardSpeaker {
+
+    border: 1px solid rgba(144, 244, 144, 0.3);
+    cursor: pointer;
+}
+
+.cardSpeaker:hover {
+    border: 1px solid white;
+    box-shadow: 3px 3px 0 white;
+    cursor: pointer;
+}

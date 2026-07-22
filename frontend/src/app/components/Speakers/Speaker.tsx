@@ -45,7 +45,7 @@ const SpeakerList: React.FC<SpeakerListProps> = ({ pathName }) => {
                 const bgColor = avatarBgColors[index % avatarBgColors.length];
 
                 return (
-                    <Card key={speaker.id} className={speaker.featured ? 'featured-card' : ''}>
+                    <Card key={speaker.id} className={speaker.featured ? 'featured-card ' : 'cardSpeaker'}>
                         <div className="speaker-header">
                             {/* Layered CSS Background: SVG Pattern on top, solid dynamic color underneath */}
                             <div

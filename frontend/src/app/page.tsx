@@ -157,7 +157,7 @@ export default function Page() {
           <ScheduleCard />
 
 
-          <button className="scheduleContainerButton"> VIEW FULL SCHEDULE </button>
+          <button className="scheduleContainerButton"><Link href="/schedule">VIEW FULL SCHEDULE</Link> </button>
 
 
         </div>

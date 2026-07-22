@@ -1,0 +1,30 @@
+.mainScheduleContainer {
+    color: white;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+
+.buttonGallerySchedule {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonGallerySchedule ul {
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* this  the schedule area */
+
+
+.scheduleMainPage {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
