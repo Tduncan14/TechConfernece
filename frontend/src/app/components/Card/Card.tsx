@@ -1,19 +1,21 @@
-import React from 'react'
-import './Card.css'
-
-// define the props for the card 
+import React from 'react';
+import { Speaker } from '../Speakers/Speaker';
+import './Card.css';
 
 interface CardProps {
     children: React.ReactNode;
+    speaker?: Speaker;
     className?: string;
+    onClick?: () => void;
 }
 
-const Card: React.FC<CardProps> = ({ children, className = '' }) => {
+const Card: React.FC<CardProps> = ({ children, className = '', onClick }) => {
     return (
-        <div className={`card-container ${className}`}>
+        /* Handles clicking and CSS container styling cleanly */
+        <div className={`card-container ${className}`} onClick={onClick}>
             {children}
         </div>
-    )
-}
+    );
+};
 
-export default Card
+export default Card;
