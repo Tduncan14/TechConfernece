@@ -55,6 +55,11 @@ body {
 
 }
 
+.glowTwo {
+  font-size: 18px;
+  margin-bottom: 1rem;
+  color: #D1FF66;
+}
 
 .glowMes {
   color: #D1FF66;

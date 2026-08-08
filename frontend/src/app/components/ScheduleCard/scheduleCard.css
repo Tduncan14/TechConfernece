@@ -15,7 +15,7 @@
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     flex: .15;
-    background-color: blue;
+    background-color: #00151D;
     text-align: center;
     justify-content: center;
     align-content: center
@@ -23,7 +23,6 @@
 
 .mainScheduleContent {
     flex: 3;
-    background-color: orange;
     padding: 1rem;
 }
 
@@ -31,7 +30,6 @@
     flex: .5;
     display: flex;
     color: black;
-    background-color: yellow;
     flex-direction: column;
     padding: 1rem;
     gap: .3rem;

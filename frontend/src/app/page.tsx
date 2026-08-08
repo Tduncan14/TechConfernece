@@ -45,7 +45,7 @@ export default function Page() {
 
             <div className="machineRightContent">
 
-              <h2 className="glowMe"> // FEATURED KEYNOTE</h2>
+              <h2 className=""> // FEATURED KEYNOTE</h2>
 
               <h1>elena vasquez</h1>
 
@@ -86,30 +86,30 @@ export default function Page() {
           {/* beginninger pf tracks */}
 
           <div className="trackSpeaker">
-            <h2 className="headertwo"> // TRACKS </h2>
+            <h2 className="headertwo glowTwo"> // TRACKS </h2>
 
 
             <div className="performancesTrack">
 
               <div className="">
-                <h1>frontend</h1>
+                <h1 style={{ color: "#FFE6BA" }}>frontend</h1>
 
                 <p>BUILDING MODERN INTERFACES</p>
                 <p>FOR THE WEB</p>
               </div>
               <div className="">
-                <h1>performance</h1>
+                <h1 style={{ color: "#FEC9C3" }}>performance</h1>
                 <p>MAKE EVERY</p>
                 <p>MILLISECOND COUNT</p>
               </div>
 
               <div className="">
-                <h1>accessiblity</h1>
+                <h1 style={{ color: "#CCC4FD" }}>accessiblity</h1>
                 <p>BUILDING INCLUSIVE</p>
                 <p>EXPERIENCES FOR EVERYONE</p>
               </div>
               <div className="">
-                <h1>tooling</h1>
+                <h1 style={{ color: "#" }}>tooling</h1>
                 <p>LEVEL UP YOUR</p>
                 <p>DEVELOPER WORKFLOW</p>
               </div>
@@ -129,7 +129,7 @@ export default function Page() {
 
         <div className="bottomSpeaker">
 
-          <h2 className="headertwo">// FEATURED_SPEAKERS</h2>
+          <h2 className="headertwo glowTwo">// FEATURED_SPEAKERS</h2>
 
           <div className="speakerGallery">
             <SpeakerList pathName={pathName} />
@@ -147,14 +147,21 @@ export default function Page() {
 
       <div className="schedulehomeSchedule">
         <div className="titleSchedule">
-          <h1 className="glowMe">//   SCHEDULE_HIGHLIGHTS</h1>
+          <h1 className="glowTwo">//   SCHEDULE_HIGHLIGHTS</h1>
         </div>
+        {/* 
+         title: string;
+    h1Title: string;
+    h2Title: string;
+    time1: string;
+    time2: string;
+    day: string; */}
 
         <div className="scheduleContainerGallery">
-          <ScheduleCard />
-          <ScheduleCard />
-          <ScheduleCard />
-          <ScheduleCard />
+          <ScheduleCard title={"PERFORMANCE"} h1Title={"video compression for the web: the middle-out approach"} h2Title='DINESH CHUGTAI // PIED PIPER' time1="11:00" time2="12:00" day="DAY 1" />
+          <ScheduleCard title={"FRONTEND"} h1Title={"css container queries in production"} h2Title="MEI-LIN ZHANG // ROAMLY" time1="13:00" time2='14:00' day="DAY 1" />
+          <ScheduleCard title={"ACCESIBLITY"} h1Title={"desigining accessible audio experiences"} h2Title="FATIMA AL-RASHID // SPECTRA" time1="11:00" time2='12:00' day="DAY 2" />
+          <ScheduleCard title={"TOOLING"} h1Title={"deploy preview enviroments that scale"} h2Title="TOM KOWALSKI // NIMBUS" time1="12:00" time2="13:00" day="DAY 3" />
 
 
           <button className="scheduleContainerButton"><Link href="/schedule">VIEW FULL SCHEDULE</Link> </button>

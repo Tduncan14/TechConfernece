@@ -30,14 +30,14 @@ const page = () => {
 
 
             <div className="scheduleMainPage">
-                <ScheduleCard />
-                <ScheduleCard />
-                <ScheduleCard />
-                <ScheduleCard />
-                <ScheduleCard />
-                <ScheduleCard />
-                <ScheduleCard />
-                <ScheduleCard />
+                <ScheduleCard title={"KEYNOTE"} h1Title="the next frontier of web development" h2Title="ELENA VASQUEZ // BYTECRAFT" time1="9:00" time2='10:00' />
+                <ScheduleCard title={"PERFORMANCE"} h1Title="profiling react render at 120fps" h2Title="RYAN 0'SULLIVAN // COBALT" time1="10:00" time2='11:00' />
+                <ScheduleCard title={"PERFORMANCE"} h1Title="video compression for the web: the middle-out approach" h2Title="DINESH CHUGTAI // PIED PIPPER" time1="11:00" time2="12:00" />
+                <ScheduleCard title={"TOOLING"} h1Title="monorepos at scale: lessons from 500 packages" h2Title="JAMES OKONKWO // CARTWELL" time1="12:00" time2='13:00' />
+                <ScheduleCard title={"FRONTEND"} h1Title="css container queries in production" h2Title="MEI-LIN ZHANG // ROAMLY" time1="9:00" time2='10:00' />
+                <ScheduleCard title={"ACCESSIBLITY"} h1Title="aria patterns you're probably using wrong" h2Title="PRIYA SHARMA// COBALT" time1="12:00" time2='14:00' />
+                <ScheduleCard title={"TOOLING"} h1Title="ai-powered developer tools:hype vs. reality" h2Title="KWAME ASANTE // TRACKWISE" time1="16:00" time2='17:00' />
+
 
             </div>
         </div>
