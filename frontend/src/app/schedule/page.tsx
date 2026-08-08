@@ -6,7 +6,7 @@ import ScheduleCard from '../components/ScheduleCard/ScheduleCard'
 const page = () => {
     return (
         <div className="mainScheduleContainer">
-            <h1> // Schedule</h1>
+            <h1 className="glowMe"> // Schedule</h1>
 
             <div className="buttonGallerySchedule">
                 <ul>

@@ -45,7 +45,7 @@ export default function Page() {
 
             <div className="machineRightContent">
 
-              <h2> // FEATURED KEYNOTE</h2>
+              <h2 className="glowMe"> // FEATURED KEYNOTE</h2>
 
               <h1>elena vasquez</h1>
 
@@ -147,7 +147,7 @@ export default function Page() {
 
       <div className="schedulehomeSchedule">
         <div className="titleSchedule">
-          <h1>// SCHEDULE_HIGHLIGHTS</h1>
+          <h1 className="glowMe">//   SCHEDULE_HIGHLIGHTS</h1>
         </div>
 
         <div className="scheduleContainerGallery">

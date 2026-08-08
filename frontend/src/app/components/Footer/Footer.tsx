@@ -19,15 +19,18 @@ const Footer = () => {
                         height={225}
                     />
 
-                    <p>A three-day conference for engineers who build</p>
-                    <p>the interfaces humans use every day</p>
+                    <div className="paraFooter">
+
+                        <p>A three-day conference for engineers who build</p>
+                        <p>the interfaces humans use every day</p>
+                    </div>
 
 
                 </div>
 
                 <div className="rightFooter">
-                    <div className="rightLeft">
-                        <h1>// NAVIGATE</h1>
+                    <div className="rightLeft gapMe">
+                        <h1 className="glowMes">//   NAVIGATE</h1>
 
                         <Link href="/" >Home</Link>
                         <Link href="/schedule">Schedule</Link>
@@ -36,8 +39,8 @@ const Footer = () => {
                     </div>
 
 
-                    <div className="leftRight">
-                        <h1>// TRACKS</h1>
+                    <div className="leftRight gapMe">
+                        <h1 className="glowMes">//   TRACKS</h1>
                         <Link href=""> Frontend</Link>
                         <Link href=""> Performance</Link>
                         <Link href="">Accessiblity</Link>
@@ -47,11 +50,11 @@ const Footer = () => {
                     </div>
 
 
-                    <div className="leftRightEnd">
-                        <h1>// VENUE</h1>
-                        <li > Pier 70</li>
-                        <li > San Franciso, CA</li>
-                        <li >Nov 15-17, 2026</li>
+                    <div className="leftRightEnd  ">
+                        <h1 className="glowMes">//   VENUE</h1>
+                        <Link href="" className="moveMe" > Pier 70</Link>
+                        <Link href="" > San Franciso, CA</Link>
+                        <Link href="" >Nov 15-17, 2026</Link>
 
 
 

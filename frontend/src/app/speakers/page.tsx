@@ -11,7 +11,7 @@ const page = () => {
 
     return (
         <div className="speakerPage">
-            <h1> // speakers</h1>
+            <h1 className="glowMe"> // speakers</h1>
 
             <SpeakerList pathName={pathName} />
 

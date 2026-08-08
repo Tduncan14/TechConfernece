@@ -19,10 +19,16 @@
     background-color: darkgreen;
     padding: 24px;
     border-radius: 12px;
-    max-width: 500px;
+    max-width: 750px;
     width: 90%;
     position: relative;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.speaker-avatar-container {
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
 }
 
 .close-btn {
@@ -33,4 +39,25 @@
     border: none;
     font-size: 24px;
     cursor: pointer;
+}
+
+
+
+.speaker-avatar-container {
+    display: flex;
+}
+
+
+.profileBio {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+}
+
+.profileSchedule {
+    margin-top: 1rem;
+}
+
+.profileSchedule h1 {
+    margin-bottom: 1rem;
 }

@@ -12,10 +12,15 @@
     color: lightgray;
     margin-top: 1.4rem;
     margin-bottom: 2.4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
 }
 
 
+.paraFooter {
+    margin-top: 1rem;
+}
 
 .rightFooter {
     display: flex;
@@ -45,4 +50,14 @@
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
+}
+
+.gapMe {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.moveMe {
+    margin-top: .5rem;
 }
