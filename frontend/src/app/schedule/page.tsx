@@ -36,7 +36,7 @@ const page = () => {
                 <ScheduleCard title={"TOOLING"} h1Title="monorepos at scale: lessons from 500 packages" h2Title="JAMES OKONKWO // CARTWELL" time1="12:00" time2='13:00' />
                 <ScheduleCard title={"FRONTEND"} h1Title="css container queries in production" h2Title="MEI-LIN ZHANG // ROAMLY" time1="9:00" time2='10:00' />
                 <ScheduleCard title={"ACCESSIBLITY"} h1Title="aria patterns you're probably using wrong" h2Title="PRIYA SHARMA// COBALT" time1="12:00" time2='14:00' />
-                <ScheduleCard title={"TOOLING"} h1Title="ai-powered developer tools:hype vs. reality" h2Title="KWAME ASANTE // TRACKWISE" time1="16:00" time2='17:00' />
+                <ScheduleCard title={"TOOLING"} h1Title="ai-powered developer tools:hype vs. reality" h2Title="KWAME ASANTE // TRACKWISE" time1="16:00" time2='1:00' />
 
 
             </div>

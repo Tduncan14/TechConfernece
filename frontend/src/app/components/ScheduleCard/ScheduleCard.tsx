@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useId, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import "./scheduleCard.css";
 
@@ -13,50 +13,13 @@ interface ScheduleCardProps {
     day: string;
 }
 
-const colors = [
-    "rgb(255, 230, 186)",
-    "rgb(254, 201, 195)",
-    "rgb(255, 128, 128)",
-    "rgb(181, 233, 252)",
-];
-
-function shuffleColors() {
-    const shuffled = [...colors];
-
-    for (let i = shuffled.length - 1; i > 0; i--) {
-        const randomIndex = Math.floor(Math.random() * (i + 1));
-
-        [shuffled[i], shuffled[randomIndex]] = [
-            shuffled[randomIndex],
-            shuffled[i],
-        ];
-    }
-
-    return shuffled;
-}
-
-// Shared by all ScheduleCard components
-let availableColors: string[] = [];
-const assignedColors = new Map<string, string>();
-
-function getNextColor(cardId: string) {
-    // Keep the same color if React renders the card again
-    const existingColor = assignedColors.get(cardId);
-
-    if (existingColor) {
-        return existingColor;
-    }
-
-    // All four colors were used, so create a new random order
-    if (availableColors.length === 0) {
-        availableColors = shuffleColors();
-    }
-
-    const nextColor = availableColors.shift()!;
-    assignedColors.set(cardId, nextColor);
-
-    return nextColor;
-}
+const backgroundColors: Record<string, string> = {
+    keynote: "rgb(181, 233, 252)",
+    accessibility: "rgb(181, 233, 252)",
+    tooling: "rgb(204, 196, 253)",
+    performance: "rgb(254, 201, 195)",
+    frontend: "#ffe6ba",
+};
 
 function ScheduleCard({
     title,
@@ -66,15 +29,8 @@ function ScheduleCard({
     time2,
     day,
 }: ScheduleCardProps) {
-    const cardId = useId();
-    const [backgroundColor, setBackgroundColor] = useState(
-        "rgb(255, 255, 255)"
-
-    );
-
-    useEffect(() => {
-        setBackgroundColor(getNextColor(cardId));
-    }, [cardId]);
+    const backgroundColor =
+        backgroundColors[title.toLowerCase()] ?? "rgb(255, 255, 255)";
 
     return (
         <article
@@ -82,7 +38,7 @@ function ScheduleCard({
             style={{ backgroundColor }}
         >
             <div className="titleScheduleWord">
-                <h1 className="scheduleCardLabel" style={{ color: backgroundColor }}>{title}</h1>
+                <h1 className="scheduleCardLabel">{title}</h1>
             </div>
 
             <div className="mainScheduleContent">

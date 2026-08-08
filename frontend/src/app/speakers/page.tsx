@@ -1,22 +1,20 @@
-"use client"
-import React from 'react'
-import SpeakerList from '../components/Speakers/Speaker'
-import { usePathname } from 'next/navigation'
-import './speaker.css'
+"use client";
 
-const page = () => {
+import React from "react";
+import { usePathname } from "next/navigation";
+import SpeakerList from "../components/Speakers/Speaker";
+import "./speaker.css";
 
-    const pathName = usePathname()
-
+const SpeakersPage = () => {
+    const pathName = usePathname();
 
     return (
-        <div className="speakerPage">
-            <h1 className="glowMe"> // speakers</h1>
+        <main className="speakerPage">
+            <h1 className="glowMe">// speakers</h1>
 
             <SpeakerList pathName={pathName} />
+        </main>
+    );
+};
 
-        </div>
-    )
-}
-
-export default page
+export default SpeakersPage;

@@ -7,33 +7,172 @@
 }
 
 
+/* Desktop: Default styles */
 .header {
-
+    width: 100%;
     padding: 2rem 3rem;
     font-family: "Chakra Petch", sans-serif;
-
-
+    box-sizing: border-box;
 }
 
 .headerContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid rgba(194, 197, 194, 0.2);
 }
 
-
-
-
 .rightMenu {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
 .rightMenu button {
-    border: solid 2px white;
-    text-align: center;
+    border: 2px solid white;
+    background-color: transparent;
     color: white;
-    padding: .8rem;
+    padding: 0.8rem;
+    font-family: inherit;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+
+/* Tablet: 1024px and below */
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 1.75rem 2rem;
+    }
+
+    .headerContainer {
+        gap: 1.5rem;
+    }
+
+    .rightMenu {
+        gap: 0.75rem;
+    }
+
+    .rightMenu button {
+        padding: 0.7rem;
+    }
+}
+
+
+/* Small tablet: 768px and below */
+@font-face {
+    font-family: "Chakra Petch";
+    src: url("/assets/fonts/chakra-petch/chakra-petch-semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* Desktop */
+
+
+.rightMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rightMenu button {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 0.8rem;
+    font-family: inherit;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 1.75rem 2rem;
+    }
+
+    .headerContainer {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .rightMenu {
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    .rightMenu button {
+        padding: 0.7rem;
+    }
+}
+
+
+/* Small tablet */
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 1.5rem;
+    }
+
+    .headerContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+    }
+
+    .rightMenu {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .rightMenu button {
+        padding: 0.65rem 0.75rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 1.25rem 1rem;
+    }
+
+    .headerContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .headerContainer>* {
+        align-self: center;
+    }
+
+    .rightMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 0.75rem;
+    }
+
+    .rightMenu button {
+        width: min(100%, 280px);
+        padding: 0.7rem;
+        font-size: 0.85rem;
+    }
 }

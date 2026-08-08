@@ -3,62 +3,100 @@
 import React from "react";
 import Image from "next/image";
 import { Speaker } from "../Speakers/Speaker";
-import "./Cardpopup.css";
 import ScheduleCard from "../ScheduleCard/ScheduleCard";
+import "./Cardpopup.css";
 
 interface CardpopupProps {
     speaker?: Speaker | null;
-    bgColor?: string; // Optional: Pass down the dynamic color if available
+    bgColor?: string;
     onClose?: () => void;
 }
 
-const Cardpopup: React.FC<CardpopupProps> = ({ speaker, bgColor = "#FFE6BA", onClose }) => {
-    // Guard clause
+const colorToTitle: Record<string, string> = {
+    "#ffe6ba": "Frontend",
+    "rgb(255,230,186)": "Frontend",
+
+    "#b5e9fc": "Accessibility",
+    "rgb(181,233,252)": "Accessibility",
+
+    "#fec9c3": "Performance",
+    "rgb(254,201,195)": "Performance",
+
+    "#ccc4fd": "Tooling",
+    "rgb(204,196,253)": "Tooling",
+};
+
+function normalizeColor(color: string) {
+    return color.toLowerCase().replace(/\s/g, "");
+}
+
+const Cardpopup: React.FC<CardpopupProps> = ({
+    speaker,
+    bgColor = "#FFE6BA",
+    onClose,
+}) => {
     if (!speaker) return null;
 
     const { name, role, company, avatar, bio } = speaker;
 
-    // Sanitize image path
-    let imageSrc = avatar && avatar.trim() !== "" ? avatar.trim() : "/assets/images/default-avatar.png";
-    if (!imageSrc.startsWith("/") && !imageSrc.startsWith("http://") && !imageSrc.startsWith("https://")) {
+    const normalizedBgColor = normalizeColor(bgColor);
+
+    const scheduleTitle =
+        colorToTitle[normalizedBgColor] ?? "Frontend";
+
+    let imageSrc =
+        avatar?.trim() || "/assets/images/default-avatar.png";
+
+    if (
+        !imageSrc.startsWith("/") &&
+        !imageSrc.startsWith("http://") &&
+        !imageSrc.startsWith("https://")
+    ) {
         imageSrc = `/${imageSrc}`;
     }
 
     return (
         <div className="popup-overlay" onClick={onClose}>
-            <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-                <button className="close-btn" onClick={onClose}>
+            <div
+                className="popup-content"
+                onClick={(event) => event.stopPropagation()}
+            >
+                <button
+                    type="button"
+                    className="close-btn"
+                    onClick={onClose}
+                    aria-label="Close popup"
+                >
                     &times;
                 </button>
 
                 <div className="ProfileMe">
-                    {/* Layered background matching SpeakerList */}
-                    <div
-                        className="speaker-avatar-container"
-
-                    >
-                        <div style={{
-                            backgroundColor: bgColor,
-                            backgroundImage: `url('/assets/images/pattern-avatar-bg.svg')`
-                        }}>
+                    <div className="speaker-avatar-container">
+                        <div
+                            style={{
+                                backgroundColor: bgColor,
+                                backgroundImage:
+                                    "url('/assets/images/pattern-avatar-bg.svg')",
+                            }}
+                        >
                             <Image
                                 alt={`${name}'s avatar`}
                                 src={imageSrc}
                                 width={120}
                                 height={120}
                                 className="speaker-avatar"
-                                unoptimized={imageSrc.startsWith('http')}
+                                unoptimized={imageSrc.startsWith("http")}
                             />
                         </div>
 
                         <div className="profileMain">
                             <h3>{name}</h3>
-                            <p className="profileRole">{role}  @{company}</p>
 
+                            <p className="profileRole">
+                                {role} @{company}
+                            </p>
                         </div>
                     </div>
-
-
                 </div>
 
                 <hr />
@@ -68,9 +106,18 @@ const Cardpopup: React.FC<CardpopupProps> = ({ speaker, bgColor = "#FFE6BA", onC
                 </div>
 
                 <hr />
+
                 <div className="profileSchedule">
                     <h1>// TALK</h1>
-                    <ScheduleCard />
+
+                    <ScheduleCard
+                        title={scheduleTitle}
+                        h1Title="Designing accessible audio experiences"
+                        h2Title={`${name.toUpperCase()} // ${company.toUpperCase()}`}
+                        time1="11:00"
+                        time2="12:00"
+                        day="DAY 2"
+                    />
                 </div>
             </div>
         </div>

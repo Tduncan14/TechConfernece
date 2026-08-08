@@ -13,6 +13,7 @@ const Footer = () => {
                 <div className="leftFooter">
 
                     <Image
+                        className="centerMeee"
                         src="/assets/images/logo.svg"
                         alt="Logo"
                         width={225}

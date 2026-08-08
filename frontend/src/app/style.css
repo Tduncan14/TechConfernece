@@ -128,3 +128,348 @@
     color: darkgreen;
     box-shadow: 3px 3px darkgreen;
 }
+
+
+
+
+.homeContainer {
+    width: 100%;
+    padding: 2rem 3rem;
+    color: white;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+/* Upper machine */
+
+.codeMeetSMachine {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.machine {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    gap: 2rem;
+}
+
+
+/* Machine left */
+
+.machineLeft {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    min-width: 0;
+    padding: 1rem;
+    background-color: pink;
+    box-sizing: border-box;
+}
+
+.machineLeft h1,
+.machineLeft h2,
+.machineLeft p {
+    overflow-wrap: anywhere;
+}
+
+.machineFooter {
+    margin-top: auto;
+}
+
+
+/* Machine right */
+
+.machineRight {
+    display: flex;
+    flex: 1.25;
+    min-width: 0;
+    padding: 1rem;
+    background-color: lightblue;
+    box-sizing: border-box;
+}
+
+.machineDates {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+}
+
+
+/* Upper speaker area */
+
+.upperSpeaker {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.performancesTrack {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+
+.performancesTrack>div {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 1rem;
+    border: 1px solid white;
+    box-shadow: 3px 3px 0 white;
+    box-sizing: border-box;
+}
+
+.performancesTrack>div h1 {
+    margin-bottom: 0.7rem;
+    overflow-wrap: anywhere;
+}
+
+.speakerhomeContainer {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.headertwo {
+    margin-top: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Schedule gallery */
+
+.scheduleContainerGallery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+}
+
+.scheduleContainerButton {
+    align-self: center;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    box-shadow: 3px 3px white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.scheduleContainerButton:hover {
+    background-color: lawngreen;
+    color: darkgreen;
+    box-shadow: 3px 3px darkgreen;
+}
+
+
+/* Tablet: 1024px and below */
+
+@media screen and (max-width: 1024px) {
+    .homeContainer {
+        padding: 2rem;
+    }
+
+    .machine {
+        gap: 1.5rem;
+    }
+
+    .machineLeft {
+        flex: 1.7;
+    }
+
+    .machineRight {
+        flex: 1;
+    }
+
+    .machineLeft,
+    .machineRight {
+        padding: 0.85rem;
+    }
+
+    .machineDates {
+        gap: 0.75rem;
+    }
+
+    .performancesTrack {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .performancesTrack>div {
+        flex: 1 1 calc(50% - 1.5rem);
+    }
+
+    .headertwo {
+        margin-top: 3.5rem;
+    }
+
+    .scheduleContainerGallery {
+        gap: 1.5rem;
+    }
+}
+
+
+/* Small tablet: 768px and below */
+
+@media screen and (max-width: 768px) {
+    .homeContainer {
+        padding: 1.5rem;
+    }
+
+    .machine {
+        gap: 1rem;
+    }
+
+    .machineLeft {
+        flex: 1.5;
+        padding: 0.75rem;
+    }
+
+    .machineRight {
+        flex: 1;
+        padding: 0.75rem;
+    }
+
+    .machineLeft h1 {
+        font-size: clamp(1.25rem, 4vw, 2rem);
+    }
+
+    .machineLeft h2 {
+        font-size: clamp(1rem, 3vw, 1.5rem);
+    }
+
+    .machineDates {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .performancesTrack {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+
+    .performancesTrack>div {
+        width: 100%;
+        padding: 0.85rem;
+    }
+
+    .performancesTrack>div h1 {
+        font-size: clamp(1rem, 3vw, 1.4rem);
+    }
+
+    .speakerhomeContainer {
+        margin-top: 1.5rem;
+    }
+
+    .headertwo {
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .scheduleContainerGallery {
+        gap: 1.25rem;
+    }
+
+    .speakerButton {
+
+        padding-bottom: 2rem;
+    }
+
+    .schedulehomeSchedule {
+        margin-top: 1rem;
+    }
+
+    .scheduleContainerButton {
+        margin-top: 1rem;
+        padding: 0.85rem;
+    }
+}
+
+
+/* Mobile: 480px and below */
+
+@media screen and (max-width: 480px) {
+    .homeContainer {
+        padding: 1.25rem 1rem;
+    }
+
+
+    .scheduleContainerButton {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .speakerButton {
+
+        padding-bottom: 2rem;
+    }
+
+    .machine {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .machineLeft,
+    .machineRight {
+        flex: none;
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    .machineLeft {
+        min-height: 240px;
+    }
+
+    .machineFooter {
+        margin-top: 2rem;
+    }
+
+    .machineDates {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .machineDates>* {
+        flex: 1 1 40%;
+        min-width: 0;
+    }
+
+    .performancesTrack {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .performancesTrack>div {
+        padding: 0.75rem;
+    }
+
+    .speakerhomeContainer {
+        margin-top: 1.25rem;
+    }
+
+    .headertwo {
+        margin-top: 2.5rem;
+        margin-bottom: 1.25rem;
+        text-align: center;
+    }
+
+    .scheduleContainerGallery {
+        gap: 1rem;
+    }
+
+    .scheduleContainerButton {
+        width: min(100%, 280px);
+        padding: 0.75rem;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}

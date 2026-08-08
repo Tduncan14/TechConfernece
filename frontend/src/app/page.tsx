@@ -147,7 +147,7 @@ export default function Page() {
 
       <div className="schedulehomeSchedule">
         <div className="titleSchedule">
-          <h1 className="glowTwo">//   SCHEDULE_HIGHLIGHTS</h1>
+          <h1 className="glowTwo ">//   SCHEDULE_HIGHLIGHTS</h1>
         </div>
         {/* 
          title: string;
@@ -159,12 +159,13 @@ export default function Page() {
 
         <div className="scheduleContainerGallery">
           <ScheduleCard title={"PERFORMANCE"} h1Title={"video compression for the web: the middle-out approach"} h2Title='DINESH CHUGTAI // PIED PIPER' time1="11:00" time2="12:00" day="DAY 1" />
-          <ScheduleCard title={"FRONTEND"} h1Title={"css container queries in production"} h2Title="MEI-LIN ZHANG // ROAMLY" time1="13:00" time2='14:00' day="DAY 1" />
-          <ScheduleCard title={"ACCESIBLITY"} h1Title={"desigining accessible audio experiences"} h2Title="FATIMA AL-RASHID // SPECTRA" time1="11:00" time2='12:00' day="DAY 2" />
+          <ScheduleCard title={"ACCESIBLITY"} h1Title={"desigining accessible audio experiences"} h2Title="FATIMA AL-RASHID // SPECTRA" time1="11:00" time2='12:00' day="DAY 2" />          <ScheduleCard title={"FRONTEND"} h1Title={"css container queries in production"} h2Title="MEI-LIN ZHANG // ROAMLY" time1="13:00" time2='14:00' day="DAY 1" />
+
           <ScheduleCard title={"TOOLING"} h1Title={"deploy preview enviroments that scale"} h2Title="TOM KOWALSKI // NIMBUS" time1="12:00" time2="13:00" day="DAY 3" />
 
 
-          <button className="scheduleContainerButton"><Link href="/schedule">VIEW FULL SCHEDULE</Link> </button>
+          <button className="
+          "><Link href="/schedule">VIEW FULL SCHEDULE</Link> </button>
 
 
         </div>
