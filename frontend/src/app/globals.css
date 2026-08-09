@@ -7,6 +7,7 @@
   --neutral500: #49616A;
   --neutral200: #C2C5C2;
   --neutral100: #FCEFE8;
+  --lightGreen: #D1FF66;
 }
 
 
@@ -53,6 +54,11 @@ body {
   font-size: 26px;
   margin-bottom: 1rem;
 
+}
+
+
+.lightGreen {
+  color: #D1FF66;
 }
 
 .glowTwo {

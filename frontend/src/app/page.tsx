@@ -164,8 +164,7 @@ export default function Page() {
           <ScheduleCard title={"TOOLING"} h1Title={"deploy preview enviroments that scale"} h2Title="TOM KOWALSKI // NIMBUS" time1="12:00" time2="13:00" day="DAY 3" />
 
 
-          <button className="
-          "><Link href="/schedule">VIEW FULL SCHEDULE</Link> </button>
+          <button className="speakerButton"><Link href="/schedule">VIEW FULL SCHEDULE</Link> </button>
 
 
         </div>

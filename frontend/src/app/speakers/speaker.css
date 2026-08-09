@@ -17,3 +17,7 @@
     box-shadow: 3px 3px 0 white;
     cursor: pointer;
 }
+
+.Speakerbigname {
+    font-size: clamp(23px, 31px, 35px);
+}

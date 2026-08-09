@@ -228,6 +228,8 @@
     overflow-wrap: anywhere;
 }
 
+
+
 .speakerhomeContainer {
     width: 100%;
     margin-top: 2rem;
@@ -265,6 +267,13 @@
     color: darkgreen;
     box-shadow: 3px 3px darkgreen;
 }
+
+
+.viewSchedule {
+    border: 1px solid white !important;
+    box-shadow: 3px 3px 0 white !important;
+}
+
 
 
 /* Tablet: 1024px and below */
