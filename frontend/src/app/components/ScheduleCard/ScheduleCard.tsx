@@ -38,7 +38,7 @@ function ScheduleCard({
             style={{ backgroundColor }}
         >
             <div className="titleScheduleWord">
-                <h1 className="scheduleCardLabel">{title}</h1>
+                <h1 className="scheduleCardLabel" style={{ color: backgroundColor }}>{title}</h1>
             </div>
 
             <div className="mainScheduleContent">

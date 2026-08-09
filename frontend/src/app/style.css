@@ -3,6 +3,13 @@
     color: white;
 }
 
+.speakerButton:hover {
+
+    background-color: #D1FF66 !important;
+
+
+}
+
 
 /* upper machine */
 

@@ -11,14 +11,20 @@
 }
 
 .speaker-info {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
-    row-gap: .8rem;
+    gap: 0.8rem;
+    flex: 1;
 }
 
+.speaker-info p {
+    flex: 1;
+}
 
+.speaker-title {
+    text-wrap: nowrap;
+}
 
 .featured-card {
 

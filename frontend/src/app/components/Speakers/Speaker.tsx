@@ -64,7 +64,7 @@ const SpeakerList: React.FC<SpeakerListProps> = ({ pathName }) => {
                             </div>
                             <div className="speaker-info">
                                 <h3 className="Speakerbigname">{speaker.name}</h3>
-                                <p className="speaker-title">{speaker.role}  @{speaker.company}</p>
+                                <p className="speaker-title">{speaker.role}@ {speaker.company}</p>
 
                                 <hr />
                                 <p className="colorBioSpeaker lightGreen">{speaker.bio.slice(0, 55)}...</p>
