@@ -90,7 +90,7 @@ const Cardpopup: React.FC<CardpopupProps> = ({
                         </div>
 
                         <div className="profileMain">
-                            <h3>{name}</h3>
+                            <h1 >{name}</h1>
 
                             <p className="profileRole">
                                 {role} @{company}
@@ -108,7 +108,7 @@ const Cardpopup: React.FC<CardpopupProps> = ({
                 <hr />
 
                 <div className="profileSchedule">
-                    <h1>// TALK</h1>
+                    <h1 className="titleTalk">// TALK</h1>
 
                     <ScheduleCard
                         title={scheduleTitle}

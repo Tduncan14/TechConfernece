@@ -11,6 +11,9 @@
 }
 
 
+
+
+
 /* upper machine */
 
 
@@ -26,18 +29,50 @@
     display: flex;
     gap: 2rem;
     align-items: stretch;
-
 }
 
+
+
+
+.machineH1 {
+    font-size: clamp(2.5rem, 4.4rem, 4.8rem);
+    color: black;
+    font-weight: bolder;
+    width: 90%;
+    z-index: 1;
+}
+
+.invertCool {
+    padding-left: 5rem;
+    color: #FEC9C3;
+    position: relative;
+    top: -4.3rem;
+    Z-index: 0;
+    font-size: clamp(4rem, 8rem, 9rem);
+    letter-spacing: 9px;
+    -webkit-text-stroke: 1px #49616A;
+    paint-order: stroke fill;
+}
+
+
+.machineDates {
+    color: black;
+    margin-top: 1.2rem;
+    border-top: 3px solid black;
+    padding: .8rem;
+    font-weight: 400;
+
+}
 
 /* MachineLeft */
 
 .machineLeft {
     display: flex;
     flex-direction: column;
-    background-color: pink;
+    background-color: #FEC9C3;
     flex: 2;
-    padding: 1rem;
+    padding: 1.5rem;
+    max-width: fit-content;
 }
 
 .machineFooter {
@@ -45,15 +80,54 @@
 }
 
 
+.viewTalk {
+    margin-top: auto;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 2px black;
+    padding: 1rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    transition: ease-in-out 1s;
+}
+
+
+.viewTalk:hover {
+    background: black;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+}
+
 /* this is the right side */
 
 
 .machineRight {
-    background: lightblue;
+    background: #B5E9FC;
     flex: 1.25;
-    padding: 1rem;
+    padding: 1.4rem;
     display: flex;
+    color: black;
 }
+
+.machineRightContent {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.keynote {
+    margin-bottom: 1rem;
+}
+
+.nameMe {
+    font-size: clamp(25px, 28px, 34px);
+    margin-bottom: 2rem;
+}
+
+.nameMetitle {
+    text-wrap: nowrap;
+}
+
 
 .machineDates {
     display: flex;
@@ -166,15 +240,7 @@
 
 /* Machine left */
 
-.machineLeft {
-    display: flex;
-    flex: 2;
-    flex-direction: column;
-    min-width: 0;
-    padding: 1rem;
-    background-color: pink;
-    box-sizing: border-box;
-}
+
 
 .machineLeft h1,
 .machineLeft h2,
@@ -193,9 +259,16 @@
     display: flex;
     flex: 1.25;
     min-width: 0;
-    padding: 1rem;
     background-color: lightblue;
     box-sizing: border-box;
+}
+
+.companyName {
+    margin-bottom: 4rem;
+}
+
+.developmentClass {
+    margin-bottom: .5rem;
 }
 
 .machineDates {

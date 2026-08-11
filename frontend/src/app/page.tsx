@@ -23,7 +23,7 @@ export default function Page() {
 
           <div className="machineLeft">
 
-            <h1> where code meets the machine_</h1>
+            <h1 className="machineH1"> where code meets the machine_</h1>
 
 
             <h1 className="invertCool"> HORIZON</h1>
@@ -31,12 +31,12 @@ export default function Page() {
 
 
             <div className="machineFooter">
-              <hr />
+
               <div className="machineDates">
-                <h1>Nov 15-17 , 2026</h1>
+                <h1>Nov 15-17,  2026</h1>
 
 
-                <h1> PIER 70, SF</h1>
+                <h1> PIER 70,  SF</h1>
               </div>
             </div>
           </div>
@@ -45,21 +45,21 @@ export default function Page() {
 
             <div className="machineRightContent">
 
-              <h2 className=""> // FEATURED KEYNOTE</h2>
+              <h2 className="keynote"> // FEATURED KEYNOTE</h2>
 
-              <h1>elena vasquez</h1>
+              <h1 className="nameMe">elena vasquez</h1>
 
-              <h2>PRINCIPAL FRONTEND ENGINEER</h2>
-              <h2>@BYTECRAFT</h2>
-
-
+              <h2 className="nameMetitle">PRINCIPAL FRONTEND ENGINEER</h2>
+              <h2 className="companyName">@BYTECRAFT</h2>
 
 
-              <h1>THE NEXT FRONTIER OF WEB DEVELOPMENT</h1>
+
+
+              <h1 className="developmentClass">THE NEXT FRONTIER OF WEB DEVELOPMENT</h1>
               <h2>NOV 15 / 9:00 / ROOM A</h2>
 
 
-              <button> <Link href="#">VIEW TALK </Link></button>
+              <button className="viewTalk"> <Link href="/schedule">VIEW TALK </Link></button>
             </div>
 
             <div className="machineRightImage">
