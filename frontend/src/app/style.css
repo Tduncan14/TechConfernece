@@ -162,6 +162,18 @@
 
 }
 
+
+.performancesTrack>div:hover {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #D1FF66;
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: 3px 3px 0 #D1FF66;
+
+
+}
+
 .performancesTrack>div h1 {
     margin-bottom: .7rem;
 }
