@@ -1,7 +1,10 @@
+"use client"
+
 import React from 'react'
 import Image from "next/image";
 import Link from 'next/link';
 import './Header.css'
+import { usePathname } from 'next/navigation'
 
 
 type HeaderProps = {
@@ -10,6 +13,9 @@ type HeaderProps = {
 }
 
 const Header = ({ className = "" }: HeaderProps) => {
+
+    const pathName = usePathname()
+
     return (
         <header className="header ">
             <div className="headerContainer">
@@ -23,9 +29,9 @@ const Header = ({ className = "" }: HeaderProps) => {
                 </div>
 
                 <div className="rightMenu">
-                    <button><Link href="/">HOME </Link></button>
-                    <button><Link href="/schedule">SCHEDULE</Link></button>
-                    <button><Link href="/speakers">SPEAKERS</Link></button>
+                    <Link className={pathName === '/' ? "glowBorder" : 'button'} href="/">HOME </Link>
+                    <Link className={pathName === '/schedule' ? "glowBorder" : 'button'} href="/schedule">SCHEDULE</Link>
+                    <Link className={pathName === '/speakers' ? "glowBorder" : 'button'} href="/speakers">SPEAKERS</Link>
 
                 </div>
 

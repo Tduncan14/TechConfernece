@@ -72,3 +72,9 @@ body {
   margin-bottom: .5rem;
   font-size: 14px;
 }
+
+
+.glowBorder {
+  color: #D1FF66;
+  box-shadow: 2px 2px 2px 4px #D1FF66;
+}

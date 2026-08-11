@@ -3,11 +3,13 @@
     border: 1px solid;
     box-sizing: border-box;
     overflow: hidden;
+
 }
 
 .scheduleCard {
     display: flex;
     width: 100%;
+    color: black;
 }
 
 .titleScheduleWord {
@@ -185,4 +187,18 @@
         border-left: 2px dashed black;
         overflow-wrap: anywhere;
     }
+}
+
+
+/*  more style */
+
+
+.mainScheduleContent h1 {
+    font-size: clamp(24px, 32px, 34px);
+}
+
+.mainScheduleContent h3 {
+    font-size: clamp(17px, 19px, 24px);
+    border-bottom: 1px solid rgba(194, 197, 194, 0.5);
+    margin-bottom: 1rem;
 }
