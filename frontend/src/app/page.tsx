@@ -64,8 +64,13 @@ export default function Page() {
 
             <div className="machineRightImage">
 
-              <Image alt="image" src="/assets/images/avatar-elena-vasquez.webp" height={500} width={500} />
-
+              <Image
+                src="/assets/images/avatar-elena-vasquez.webp"
+                alt="image"
+                height={500}
+                width={500}
+                className="speakerImage"
+              />
             </div>
 
           </div>
